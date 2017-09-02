@@ -252,7 +252,6 @@ li{
 #logo img {
    width: 350px;
    height: 90px;
-   '
 }
 
 #main-menu {
@@ -360,7 +359,7 @@ li{
 }
 
 /*--------------body style---------------------------------------------------------*/
-#body {
+#body { 
      margin-top:3px; 
      min-height: 1800px;
    }
@@ -442,7 +441,37 @@ h2 {
     color: #fff;
   }
 }
- /*  ---------------------------------------   */
+
+#edit-logo{
+	width: 400px;
+	height: 250px;
+	margin-left: 200px;
+}
+
+#edit-pw{
+	font-size:25px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-weight: bold;
+	padding-left: 320px;
+}
+
+#edit-pw2{
+	font-size:13px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	padding-left: 200px;
+}
+
+#edit-pw-input{
+	padding-left: 300px;
+	padding-top: 10px;
+}
+
+#edit-pw-find{
+	padding-left: 250px;
+	padding-top: 30px;
+}
+
+ /*  -------------table style--------------------------   */
     
 
    #main {
@@ -543,8 +572,8 @@ h2 {
 				}
 
 /*---------------------button-------------------------------*/
-.button input[type=submit]{
-    width:70px;
+.btn{
+	width:70px;
     font-size: 5px;
     font-weight:bold;
     display: block;
@@ -554,12 +583,14 @@ h2 {
     border: 2px solid #ffb6c1;
     background: transparent;
     float :left;
-    margin-left:30px;
+    margin-left:45px;
     margin-top:10px;
     background-color: #f8f8f8;
+    cursor:  pointer; 
+	overflow: hidden;
 }
 
-.button input[type=submit]:hover{
+.btn:hover{
   top: 3px;
   background-color: #ffb6c1;
   color: white;
@@ -567,6 +598,15 @@ h2 {
   
 }
 
+.login-button{
+	margin-left: 470px;
+    margin-top: -21px;
+}
+
+.click-button{
+    margin-left: 460px;
+    margin-top: -20px;	
+}
 
 /*------------footer style-----------------------------------------------------------*/
 #footer {
