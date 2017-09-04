@@ -73,8 +73,8 @@ html, body {
 }
 
 .hidden{
-	/* visability: hidden; */
-	display:none;	
+   /* visability: hidden; */
+   display:none;   
 }
 
 .logo {
@@ -102,27 +102,28 @@ html, body {
 /*-----------------회원가입 폼-------------------------------*/
 
 .colbox{
-	text-aline:left;
-	background:#dcdcdc;
-	width:500px; 
-	height:200px;
-	overflow-y:scroll;
-	margin-left:auto;
-	margin-right:auto;
-	line-height: 150%;
+   text-aline:left;
+   background:#dcdcdc;
+   width:500px; 
+   height:200px;
+   overflow-y:scroll;
+   margin-left:auto;
+   margin-right:auto;
+   line-height: 150%;
+   padding: 20px;
 }
 
 #a1{
-	 text-align: center;
+    text-align: center;
 }
 
 #a2{
-	 text-align: center;
+    text-align: center;
 }
 
 #aa{
-	margin-left: auto;
-	margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 form {
@@ -185,7 +186,7 @@ form button {
 
 
 form button:hover {
- 	top: 3px;
+    top: 3px;
     background-color: #263238;
     color: #ffffff;
     font-weight: bold;

@@ -17,7 +17,7 @@
  
    
  <!--                      visual 부분                           -->
- <jsp:include page="../../../views/customer/menu/inc/visual.jsp"/>
+ <jsp:include page="inc/visual-cm.jsp"/>
 		
     	  <div id="body">
             <div class="content-container">

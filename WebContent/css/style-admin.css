@@ -313,7 +313,7 @@ li{
    height: 25px;
    border: 0px;
    text-indent: -100px;
-   background: url("../../images/clickimg.jpg") no-repeat center;
+   background: url("../images/clickimg.jpg") no-repeat center;
    cursor: pointer;
 }
 
@@ -456,6 +456,19 @@ h2 {
 	
 }
 
+#table-3{
+   margin-bottom:30px;
+}
+
+#table-sero-mie2{
+   position: relative;
+   top:154px;
+}
+
+.edit-button-mie2{
+   margin-left: 400px;
+   text-align: center;
+}
 
 
 
@@ -557,6 +570,15 @@ h2 {
 				.left{
 					text-align: left;
 				}
+				
+ .expert-info{
+   position: relative;
+   border:1px solid #ccc; 
+   padding:10px;
+   width: 480px;
+   margin: 45px;
+   min-height: 200px;
+}
 
 /*---------------------button-------------------------------*/
 .btn{
@@ -564,14 +586,10 @@ h2 {
     font-size: 5px;
     font-weight:bold;
     display: block;
-    margin-bottom: 7px;
     padding: 5px 5px;
     color: #999999;
     border: 2px solid #ffb6c1;
     background: transparent;
-    float :left;
-    margin-left:45px;
-    margin-top:10px;
     background-color: #f8f8f8;
     cursor:  pointer; 
 	overflow: hidden;
@@ -595,10 +613,18 @@ h2 {
 	margin-top: -23px;
 }
 
+.ok-button-fic2{
+   margin-left: 260px;
+}
+
 .edit-button{
 	margin-left: 450px;
     margin-top: -32px;
     text-align: center;
+}
+
+.edit-button-nir{
+   margin-left: 260px;
 }
 
 .delete-button{
@@ -606,10 +632,29 @@ h2 {
 	margin-top: -23px;
 }
 
-
-/*------------footer style-----------------------------------------------------------
-#footer {
-   min-height: 100px;
-   width: 1890px;
- /*   margin-left: 100px; */
+.delete-button-2{
+   margin-left : 10px;
+   margin-top: -32px;
 }
+
+
+/*------------footer style-----------------------------------------------------------*/
+/* #footer {
+   border-top:solid 3px black;
+   background: #02d8dd;
+   min-height: 200px;
+   width: 1890px;
+   margin:-50px;
+}
+#footer ul {
+
+margin-left: 39%;
+margin-top: 5%;
+      
+}
+
+#footer li{
+     font-family: 맑은고딕, 고딕, sans-serif;
+    font-size: 12px;
+    color: #000000;    
+ }  */

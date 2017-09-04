@@ -312,7 +312,7 @@ li{
    height: 25px;
    border: 0px;
    text-indent: -100px;
-   background: url("../../images/clickimg.jpg") no-repeat center;
+   background: url("../images/clickimg.jpg") no-repeat center;
    cursor: pointer;
 }
 
@@ -357,6 +357,74 @@ li{
 #visual .content-container {
 	background: #E8F1EC ;
 }
+
+
+/*--------------visual------------------------*/
+#visual-basic {
+ background:#ffeef7 url("../images/bg-basic.png") no-repeat  85%;
+height: 330px;
+
+}
+
+
+#visual-basic .content-container {
+background: url("../images/bg-basicment.png") no-repeat center;
+margin-left: -10%;
+
+}
+
+#visual-cm {
+ background:  #ebecf3 url("../images/bg-visual.png") no-repeat  89% ;
+     height: 330px;
+
+}
+
+
+#visual-cm .content-container {
+width: 50%;
+height: 100%;
+margin-left:  8%;
+
+   
+}
+
+#visual-cm .content-container img {
+margin-top:7%;
+margin-left:  17%;
+
+   
+}
+
+
+#visual-community {
+ background:#fff3e8 url("../images/bg-community.png") no-repeat top right;
+height: 330px;
+
+}
+
+
+#visual-community .content-container {
+
+background: url("../images/bg-communityment.png") no-repeat center;
+margin-left: -5%;
+
+
+}
+
+#visual-mypage{
+    background:#efe4b0 url("../images/bg-mypage.png") no-repeat top right;
+height: 330px;
+}
+
+
+#visual-mypage .content-container {
+
+background: url("../images/bg-mypagement.png") no-repeat center;
+margin-left: -13%;
+
+
+}
+
 
 /*--------------body style---------------------------------------------------------*/
 #body { 
@@ -442,6 +510,16 @@ h2 {
   }
 }
 
+.pw-input {
+   background: #ffffff;
+   counter-reset: fieldsets;
+   padding: 60px;
+   width: 800px;
+   height: 300px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+ 
+}
+
 #edit-logo{
 	width: 400px;
 	height: 250px;
@@ -471,6 +549,33 @@ h2 {
 	padding-top: 30px;
 }
 
+#img-table img{
+	float : left;
+}
+
+#img-table table{
+	padding-top: 50px;
+}
+
+#table-2{
+	margin-bottom: 100px;
+	
+}
+
+#table-3{
+   margin-bottom:30px;
+}
+
+#table-sero-mie2{
+   position: relative;
+   top:154px;
+}
+
+.edit-button-mie2{
+   margin-left: 400px;
+   text-align: center;
+}
+
  /*  -------------table style--------------------------   */
     
 
@@ -489,6 +594,7 @@ h2 {
 	   			font-weight: bold;
 	   			padding: 10px 8px;
 	   		}
+	   		
 	   		
 	   		table.table-sero,
 	   		table.table-garo{
@@ -583,8 +689,6 @@ h2 {
     border: 2px solid #ffb6c1;
     background: transparent;
     float :left;
-    margin-left:45px;
-    margin-top:10px;
     background-color: #f8f8f8;
     cursor:  pointer; 
 	overflow: hidden;
@@ -605,12 +709,32 @@ h2 {
 
 .click-button{
     margin-left: 460px;
-    margin-top: -20px;	
+    margin-top: -20px;
+    text-align: center	
 }
 
 /*------------footer style-----------------------------------------------------------*/
 #footer {
-   min-height: 100px;
+   /* border-top:solid 3px black; */
+  /*  background: #02d8dd; */
+   min-height: 200px;
    width: 1890px;
- /*   margin-left: 100px; */
+   margin:-50px;
 }
+#footer ul {
+
+margin-left: 13%;
+margin-top: 5%;
+      
+}
+
+#footer li{
+      
+        
+              font-family: 맑은고딕, 고딕, sans-serif;
+             font-size: 12px;
+             color: #383838;  
+             text-align: center;
+               
+       
+         }

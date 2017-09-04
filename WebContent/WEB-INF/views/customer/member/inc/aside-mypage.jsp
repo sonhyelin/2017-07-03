@@ -11,8 +11,8 @@
 		<br>
 		<nav>
 			<h1>
-				<img src="../../images/sub-head-mypage.png" width="250px"
-					height="100px" alt="마이페이지" />
+				<a href=""></a><img src="../../images/sub-head-mypage.png" width="250px"
+					height="100px" alt="마이페이지" /></a>
 			</h1>
 			<ul class="accordion-menu">
 				<li>

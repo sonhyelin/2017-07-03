@@ -16,9 +16,7 @@
 <!--                    헤더  부분                             -->
 <jsp:include page="../../inc/header.jsp"></jsp:include>
  
-<!--                      visual 부분                           -->
-    <jsp:include page="../../../views/customer/menu/inc/visual.jsp"/>
- 
+
 
 		<div id="body">
 			<div class="content-container">

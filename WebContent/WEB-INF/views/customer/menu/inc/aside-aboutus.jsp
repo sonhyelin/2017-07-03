@@ -19,7 +19,7 @@
 						<ul class="accordion-menu">
 							<li>
 								<div class="dropdownlink">
-									인사말 																		
+									인사말</a>																	
 								</div>									
 						   </li>
 								<li>

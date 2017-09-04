@@ -17,14 +17,14 @@
  
    
  <!--                      visual 부분                           -->
- <jsp:include page="../../../views/customer/menu/inc/visual.jsp"/>
+ <jsp:include page="inc/visual-basic.jsp"/>
 		
     	<div id="body">
 	  	 	<div class="content-container">
 			   <main id = "main">
 				   <div id="main-pont">
 				     <h1>강아지 나이별</h1>
-				     <h3> 1년 미만 │ 1년 이상 성견 │ 7년 이상 노령견 </h3>
+				     <h3>  1년 이상 성견 </h3>
 				 
 
 					<div class="wrap">

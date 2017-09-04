@@ -18,8 +18,8 @@
 							<li>
 								<div class="dropdownlink">추천 종류</div>
 							<ul class="submenuItems">
-								<li><a href="#">• 기본 추천</a></li>
-								<li><a href="#">• 맞춤 추천</a></li>
+								<li><a href="cm-recobasic">• 기본 추천</a></li>
+								<li><a href="cm-recocm">• 맞춤 추천</a></li>
 							</ul>
 							</li>
 						</ul>

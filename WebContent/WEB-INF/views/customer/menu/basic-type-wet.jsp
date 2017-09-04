@@ -17,14 +17,14 @@
  
    
  <!--                      visual 부분                           -->
- <jsp:include page="../../../views/customer/menu/inc/visual.jsp"/>
+ <jsp:include page="inc/visual-basic.jsp"/>
 		
     	<div id="body">
 	  	 	<div class="content-container">
 			   <main id = "main">
 				   <div id="main-pont">
-				     <h1>강아지 크기별</h1>
-				     <h3> 대형견 │ 중형견 │ 소형견 </h3>
+				     <h1>사료 타입별</h1>
+				     <h3>  습식  </h3>
 				 
 
 					<div class="wrap">

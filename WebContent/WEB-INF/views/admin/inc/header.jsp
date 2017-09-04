@@ -5,28 +5,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="${path}/css/style.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
 <header id="header">
       <div class="content-container">
          <h1 id="logo">
-            <img src="../../images/doglogo.png" width="300px" height="100px"
-               alt="PUPPYFOOD101" />
+             <a href=""><img src="../../images/doglogo.png" width="300px" height="100px"
+               alt="PUPPYFOOD101" /></a>
          </h1>
 
          <section>
             <nav id="main-menu" class="hd-list">
                <ul>
-                  <li><a href="../../puppy-sub/html/subpage-aboutus-hello.html">
+                  <li><a href="">
                         ABOUT US</a></li>
-                  <li><a href="../../puppy-sub/html/subpage-basic-type.html">
+                  <li><a href="">
                      기본 사료</a></li>
                   <li><a
-                     href="../../puppy-sub/html/subpage-cmfood-recotype-basic.html">
+                     href="">
                      맞춤 사료</a></li>
                   <li><a
-                     href="../../puppy-sub/html/subpage-community-free.html">
+                     href="">
                      커뮤니티</a></li>
                </ul>
             </nav>

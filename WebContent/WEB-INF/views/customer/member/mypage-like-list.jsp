@@ -8,92 +8,120 @@
 <meta charset="UTF-8">
 <title>puppyfood101</title>
 <link href="${path}/css/style.css" type="text/css" rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
 </head>
 <body>
 
 <!--                    헤더  부분                             -->
 <jsp:include page="../../inc/header.jsp"></jsp:include>
 
-<div id="visual">
-		<div class="content-container"></div>
-		<div id="body">
-			<div class="content-container">
-				<main id="main">
-				<div id="main-pont">
-					<p>나의 찜상품 페이지</p>
-				</div>
-				</main>
+<!--                    visual  부분                             -->
+<jsp:include page="inc/visual-mypage.jsp"></jsp:include>
 
-				
-				<aside id="aside">
-				<br>
-					<nav>
-						<h1>
-							<img src="../../images/sub-head-mypage.png" width="250px"
-								height="100px" alt="나의 페이지 수정" />
-						</h1>
-						<ul class="accordion-menu">
-							<li>
-								<div class="dropdownlink">회원 정보</div>
-								<ul class="submenuItems">
-									<li><a href="#">• 정보 조회</a></li>
-									<li><a href="#">• 정보 수정</a></li>
-									<li><a href="#">• 회원 탈퇴</a></li>
-								</ul> 
-							</li>
-							<li>
-								<div class="dropdownlink">나의 후기</div>
-								<ul class="submenuItems">
-									<li><a href="#">• 후기 조회</a></li>
-								</ul>
-							</li>
-							<li>
-								<div class="dropdownlink">나의 찜 상품</div>
-								
-							</li>
+      <div id="body">
+         <div class="content-container">
+            <main id="main">
+            <div id="main-pont">
+               <label class="title">나의 찜상품 페이지</label>
+               
+               <div class="wrap">
+                  <div class="tile">
+                     <img src="../../images/main-bg-10.jpg"/>
+                     <div class="text">
+                        <label>제품명 : ㅇㅇㅇ</label> <!-- label = h1로 바꾸기 -->
+                        <h2 class="animate-text"> ₩15,000</h2>
+                        <p class="animate-text"> 별점 : ★★★★★</p>
+                        <div class="dots">
+                           <span></span> <span></span> <span></span>
+                        </div>
+                     </div>
+                  </div>
 
-						</ul>
-					</nav>
-				</aside>
-		 </div>
-	</div>
-	</div>
-	
-	<!--                            footer 부분                      -->
-	<jsp:include page="../../inc/footer.jsp"></jsp:include>
+
+                  <div class="tile">
+                     <img src="../../images/main-bg-10.jpg" />
+                     <div class="text">
+                        <label>제품명 : ㅇㅇㅇ</label>
+                        <h2 class="animate-text"> ₩15,000</h2>
+                        <p class="animate-text"> 별점 : ★★★★★</p>
+                        <div class="dots">
+                           <span></span> <span></span> <span></span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="tile">
+                     <img src="../../images/main-bg-10.jpg" />
+                     <div class="text">
+                        <label>제품명 : ㅇㅇㅇ</label>
+                        <h2 class="animate-text"> ₩15,000</h2>
+                        <p class="animate-text"> 별점 : ★★★★★</p>
+                        <div class="dots">
+                           <span></span> <span></span> <span></span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="tile">
+                     <img src="../../images/main-bg-10.jpg"/>
+                     <div class="text">
+                        <label>제품명 : ㅇㅇㅇ</label>
+                        <h2 class="animate-text"> ₩15,000</h2>
+                        <p class="animate-text"> 별점 : ★★★★★</p>
+                        <div class="dots">
+                           <span></span> <span></span> <span></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+            </main>
+
+            
+		<!-- aside  부분 -->
+		<jsp:include page="../../../views/customer/member/inc/aside-mypage.jsp"></jsp:include>
 		
-		<script>
-		$(function() {
-			var Accordion = function(el, multiple) {
-				this.el = el || {};
-				// more then one submenu open?
-				this.multiple = multiple || false;
+       </div>
+   </div>
+   
+   <!--                            footer 부분                      -->
+   <jsp:include page="../../inc/footer.jsp"></jsp:include>
+      
+      <script>
+      $(function() {
+         var Accordion = function(el, multiple) {
+            this.el = el || {};
+            // more then one submenu open?
+            this.multiple = multiple || false;
 
-				var dropdownlink = this.el.find('.dropdownlink');
-				dropdownlink.on('click', {
-					el : this.el,
-					multiple : this.multiple
-				}, this.dropdown);
-			};
+            var dropdownlink = this.el.find('.dropdownlink');
+            dropdownlink.on('click', {
+               el : this.el,
+               multiple : this.multiple
+            }, this.dropdown);
+         };
 
-			Accordion.prototype.dropdown = function(e) {
-				var $el = e.data.el, $this = $(this),
-				//this is the ul.submenuItems
-				$next = $this.next();
+         Accordion.prototype.dropdown = function(e) {
+            var $el = e.data.el, $this = $(this),
+            //this is the ul.submenuItems
+            $next = $this.next();
 
-				$next.slideToggle();
-				$this.parent().toggleClass('open');
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
 
-				if (!e.data.multiple) {
-					//show only one menu at the same time
-					$el.find('.submenuItems').not($next).slideUp().parent()
-							.removeClass('open');
-				}
-			}
+            if (!e.data.multiple) {
+               //show only one menu at the same time
+               $el.find('.submenuItems').not($next).slideUp().parent()
+                     .removeClass('open');
+            }
+         }
 
-			var accordion = new Accordion($('.accordion-menu'), false);
-		})
-	</script>
+         var accordion = new Accordion($('.accordion-menu'), false);
+      })
+   </script>
 
 </body>
 </html>

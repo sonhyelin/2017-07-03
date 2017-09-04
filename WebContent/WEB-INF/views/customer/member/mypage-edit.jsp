@@ -17,15 +17,17 @@
 <!--                    헤더  부분                             -->
 <jsp:include page="../../inc/header.jsp"></jsp:include>
 
-<div id="visual">
-		<div class="content-container"></div>
+<!--                    visual  부분                             -->
+<jsp:include page="inc/visual-mypage.jsp"></jsp:include>
+
 		<div id="body">
 			<div class="content-container">
 				<main id="main">
 					<div>
 						<img src="${path}/images/logo.png" alt="로고" id="edit-logo"/>
 					</div>
-					<div>
+					<div >
+					<form class="pw-input">
 						<ul>
 							<li id="edit-pw">비밀번호 확인</li>
 							<br/>
@@ -36,8 +38,9 @@
 		                 	</form>
 		                	<input class=" btn login-button" type="submit" value="로그인" />
 		                	<li id="edit-pw-find">▶ 비밀번호를 잊으셨다면?</li>
-		                	<button class="btn click-button">click</button>
+		                	<a href= "find-id-pw" class="btn click-button">Click</a>
 						</ul>
+					</form>
 					</div>
 				
 				</main>
@@ -45,7 +48,6 @@
 			
 		<!-- aside  부분 -->
 		<jsp:include page="../../../views/customer/member/inc/aside-mypage.jsp"></jsp:include>
-	</div>
 	</div>
 	</div>
 	

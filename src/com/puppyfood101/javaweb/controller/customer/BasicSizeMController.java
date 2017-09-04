@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/customer/menu/basic-age")
-public class BasicAgeController extends HttpServlet {
+@WebServlet("/customer/menu/basic-size-m")
+public class BasicSizeMController extends HttpServlet {
 	
 	@Override
 	protected void service(
@@ -17,7 +17,7 @@ public class BasicAgeController extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		request.getRequestDispatcher("/WEB-INF/views/customer/menu/basic-age.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/views/customer/menu/basic-size-m.jsp").forward(request, response);
 		
 	}
 		

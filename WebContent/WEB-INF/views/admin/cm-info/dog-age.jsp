@@ -16,9 +16,6 @@
 <!--                    헤더  부분                             -->
 <jsp:include page="../../../views/admin/inc/header.jsp"></jsp:include>
 
-<!--                      visual 부분                           -->
-    <jsp:include page="../../../views/admin/inc/visual.jsp"/>
-
 	<div id="body">
 		<div class="content-container">
 			<main id="main">
@@ -28,7 +25,7 @@
 			</main>
 			
 	<!-- aside  부분 -->
-				<jsp:include page="../../../views/admin/cm-info/inc/aside-dog-age.jsp"></jsp:include>
+				<jsp:include page="../../../views/admin/inc/aside.jsp"></jsp:include>
 
 		</div>
 	</div>

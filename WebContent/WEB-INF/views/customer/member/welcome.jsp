@@ -24,7 +24,7 @@
            
            </div>
            <div class="button">
-            <button type="button" onclick="location.href='../../puppy-main/html/main.html'">시작하기</button>
+            <button type="button" onclick="location.href='../../customer/home/main'">시작하기</button>
             <br>
                  <br>
                       <br>

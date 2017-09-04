@@ -18,26 +18,26 @@
 							<li>
 								<div class="dropdownlink">사료 유형별</div>
 								<ul class="submenuItems">
-									<li><a href="#">• 건식 사료</a></li>
-									<li><a href="#">• 소프트 사료</a></li>
-									<li><a href="#">• 습식 사료</a></li>
-									<li><a href="#">• 수제 사료</a></li>
+									<li><a href="basic-type-dry">• 건식 사료</a></li>
+									<li><a href="basic-type-soft">• 소프트 사료</a></li>
+									<li><a href="basic-type-wet">• 습식 사료</a></li>
+									<li><a href="basic-type-handmade">• 수제 사료</a></li>
 								</ul> 
 							</li>
 							<li>
 								<div class="dropdownlink">강아지 연령별</div>
 								<ul class="submenuItems">
-									<li><a href="#">• 1년 미만</a></li>
-									<li><a href="#">• 1년 이상 성견</a></li>
-									<li><a href="#">• 7년 이상 노령견</a></li>
+									<li><a href="basic-age-1yearsdown">• 1년 미만</a></li>
+									<li><a href="basic-age-1yearsup">• 1년 이상 성견</a></li>
+									<li><a href="basic-age-7yearsup">• 7년 이상 노령견</a></li>
 								</ul>
 							</li>
 							<li>
 								<div class="dropdownlink">강아지 크기별</div>
 								<ul class="submenuItems">
-									<li><a href="#">• 소형견</a></li>
-									<li><a href="#">• 중형견</a></li>
-									<li><a href="#">• 대형견</a></li>
+									<li><a href="basic-size-s">• 소형견</a></li>
+									<li><a href="basic-size-m">• 중형견</a></li>
+									<li><a href="basic-size-l">• 대형견</a></li>
 								</ul>
 							</li>
 

@@ -8,14 +8,18 @@
 <meta charset="UTF-8">
 <title>puppyfood101</title>
 <link href="${path}/css/style.css" type="text/css" rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
 </head>
 <body>
 
 <!--                    헤더  부분                             -->
 <jsp:include page="../../inc/header.jsp"></jsp:include>
 
-<div id="visual">
-		<div class="content-container"></div>
+<!--                    visual  부분                             -->
+<jsp:include page="inc/visual-mypage.jsp"></jsp:include>
+
 		<div id="body">
 			<div class="content-container">
 				<main id="main">
@@ -60,38 +64,47 @@
                 </section>
 				</main>
 
-				<aside id="aside">
-		   		</br>
-		      <nav>
-		      	<h1><img src="../../images/sub-head-basicfood.png"  width="250px" height="100px" alt="기본사료"/></h1>
-		      	</br>
-		      	 <ul class="aside-top-menu">
-			         <li><a href="../html/subpage-basic-type.html">회원 정보</a></li>
-			         <li class="aside-menu"><a href="">정보 조회</a></li>
-			         <li class="aside-menu"><a href="">정보 수정</a></li>
-			         <li class="aside-menu"><a href="">회원 탈퇴</a></li>
-		         </ul>
-		      </nav>
-		      <nav>
-		         <ul class="aside-top-menu">
-		         	</br>
-		         	<li><a href="../html/subpage-basic-age.html">나의 후기</a></li>
-		            <li class="aside-menu"><a href="">후기 조회</a></li>
-		         </ul>
-		      </nav>
-		      <nav>
-		         <ul class="aside-top-menu">
-		         	</br>
-		         	<li><a href="../html/subpage-basic-size.html">나의 찜 상품</a></li>		     
-		         </ul>
-		      </nav>
-		   </aside>
+		<!-- aside  부분 -->
+		<jsp:include page="../../../views/customer/member/inc/aside-mypage.jsp"></jsp:include>
 		 </div>
 	</div>
 
 
 <!--                            footer 부분                      -->
 <jsp:include page="../../inc/footer.jsp"></jsp:include>
+
+		<script>
+		$(function() {
+			var Accordion = function(el, multiple) {
+				this.el = el || {};
+				// more then one submenu open?
+				this.multiple = multiple || false;
+
+				var dropdownlink = this.el.find('.dropdownlink');
+				dropdownlink.on('click', {
+					el : this.el,
+					multiple : this.multiple
+				}, this.dropdown);
+			};
+
+			Accordion.prototype.dropdown = function(e) {
+				var $el = e.data.el, $this = $(this),
+				//this is the ul.submenuItems
+				$next = $this.next();
+
+				$next.slideToggle();
+				$this.parent().toggleClass('open');
+
+				if (!e.data.multiple) {
+					//show only one menu at the same time
+					$el.find('.submenuItems').not($next).slideUp().parent()
+							.removeClass('open');
+				}
+			}
+
+			var accordion = new Accordion($('.accordion-menu'), false);
+		})
+	</script>
 
 </body>
 </html>
